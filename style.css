@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+.figmagrid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: 100vh; /* Set height to 100% of the viewport */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.figmagrid-title {
+    background-color: aqua;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin:none;
+}
+
+h1 {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: <400>; /* Corrected value */
+    font-style: normal;
+    font-size: 80px;
+    margin-block-start: none;
+    margin-block-end: none;
+    line-height:105%;
+    letter-spacing:-0.2vh;
+}
+
+.black-key {
+    background-color: black;
+    color: white;
+    padding: 0.1vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    border-bottom:0;
+    text-align: center;
+    width: 5vh;
+    height: 10vh;
+    overflow: hidden;
+    transition: transform 0.4s; /* Smooth transition for the animation */
+    
+}
+
+.black-key:hover {
+    transform: translateY(40px); /* Move up on hover */
+}
+
+.black-keys {
+    background-color:blue;
+    display: flex; /* Use flexbox to align keys */
+    justify-content: space-between; /* Center keys horizontally */
+    position: absolute; /* Position at the bottom */
+    bottom: 0; /* Align to the bottom of the page */
+    width: 100%; /* Full width */
+}
