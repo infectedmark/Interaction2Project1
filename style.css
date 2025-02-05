@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin:0;
+    overflow:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content: right;
+    margin-right:10px;
+    margin-top:3px;
+    font-family: "Rajdhani", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:24px;
+}
 
 .figmagrid {
     display: grid;
@@ -8,10 +25,10 @@
     grid-row-gap: 20px;
     height: 100vh; /* Set height to 100% of the viewport */
     overflow: hidden; /* Prevent scrolling */
+    margin:none;
 }
 
 .figmagrid-title {
-    background-color: aqua;
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 6;
@@ -28,8 +45,6 @@ h1 {
     font-weight: <400>; /* Corrected value */
     font-style: normal;
     font-size: 80px;
-    margin-block-start: none;
-    margin-block-end: none;
     line-height:105%;
     letter-spacing:-0.2vh;
 }
@@ -37,7 +52,7 @@ h1 {
 .black-key {
     background-color: black;
     color: white;
-    padding: 0.1vh;
+    padding: 0.8vh;
     border-top-left-radius: 1vh;
     border-top-right-radius: 1vh;
     border-bottom:0;
@@ -54,9 +69,8 @@ h1 {
 }
 
 .black-keys {
-    background-color:blue;
     display: flex; /* Use flexbox to align keys */
-    justify-content: space-between; /* Center keys horizontally */
+    justify-content: space-around; /* Center keys horizontally */
     position: absolute; /* Position at the bottom */
     bottom: 0; /* Align to the bottom of the page */
     width: 100%; /* Full width */
