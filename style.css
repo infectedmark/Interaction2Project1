@@ -42,7 +42,7 @@ nav{
 h1 {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
-    font-weight: <400>; /* Corrected value */
+    font-weight: <400>; 
     font-style: normal;
     font-size: 80px;
     line-height:105%;
@@ -69,9 +69,29 @@ h1 {
 }
 
 .black-keys {
-    display: flex; /* Use flexbox to align keys */
-    justify-content: space-around; /* Center keys horizontally */
-    position: absolute; /* Position at the bottom */
-    bottom: 0; /* Align to the bottom of the page */
-    width: 100%; /* Full width */
+    display: flex; 
+    justify-content: space-around; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .black-keys {
+        display: none; 
+    }
+    h1{
+        font-size: 24px;
+    }
+    .figmagrid-title {
+        background-color: aqua;
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 5;
+        grid-row-end: 10;
+        display: flex; /* Use flexbox to center the content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin:none;
+    }
 }
