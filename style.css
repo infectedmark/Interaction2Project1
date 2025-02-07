@@ -23,19 +23,19 @@ nav{
     grid-template-rows: repeat(13, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    height: 100vh; /* Set height to 100% of the viewport */
+    height: 100vh; 
     overflow: hidden; /* Prevent scrolling */
     margin:none;
 }
 
-.figmagrid-title {
+.figmagrid-title {/* mainpage title, fixed place */
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
-    display: flex; /* Use flexbox to center the content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     margin:none;
 }
 
@@ -76,7 +76,7 @@ h1 {
     width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {/* mobileview */
     .black-keys {
         display: none; 
     }
@@ -89,9 +89,9 @@ h1 {
         grid-column-end: 10;
         grid-row-start: 5;
         grid-row-end: 10;
-        display: flex; /* Use flexbox to center the content */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
         margin:none;
     }
 }
