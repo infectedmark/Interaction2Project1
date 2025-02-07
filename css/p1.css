@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin:10px;
+    overflow:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content: right;
+    margin-right:10px;
+    margin-top:3px;
+    font-family: "Rajdhani", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:24px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+    overflow:hidden;
+    margin:none;
+    height:100vh;
+}
+
+.parent-keyword {
+    background-color: rgb(255, 115, 0);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin:none;
+    font-size:10vw;
+}
+
+.parent-paragraph1 {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin:none;
+}
+.parent-paragraph2 {
+    background-color: rgb(8, 226, 34);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin:none;
+}
+
+p {
+    margin:0;
+    font-family: "Rajdhani", serif;
+    font-size: 2.5vw;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    font-style:normal;
+    margin:0;
+    transition:all 0.4s ease-in-out;
+    
+}
+
+h1:hover {
+    color:rgb(40, 255, 173);
+    font-weight:900;
+    transition:all 0.4s ease-in-out;
+    
+}

@@ -17,6 +17,18 @@ nav{
     font-size:24px;
 }
 
+a{
+    text-decoration:none;
+    color:black;
+    transition: all 0.4s linear;
+    transform:translateY(-20px);
+} 
+
+a:hover{
+    color:rgb(255, 115, 0);
+    transform: scale(1.1);
+}
+
 .figmagrid {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
@@ -60,7 +72,7 @@ h1 {
     width: 5vh;
     height: 10vh;
     overflow: hidden;
-    transition: transform 0.4s; /* Smooth transition for the animation */
+    transition: transform 0.4s;
     
 }
 
@@ -81,12 +93,12 @@ h1 {
         display: none; 
     }
     h1{
-        font-size: 24px;
+        font-size: 20px;
     }
     .figmagrid-title {
-        background-color: aqua;
-        grid-column-start: 5;
-        grid-column-end: 10;
+        
+        grid-column-start: 3;
+        grid-column-end: 12;
         grid-row-start: 5;
         grid-row-end: 10;
         display: flex; 
