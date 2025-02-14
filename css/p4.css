@@ -68,7 +68,11 @@ span {
     position: relative;
 }
 
-span:hover::after {
+span:hover{
+    color: royalblue;
+    transition: ease-in-out 0.5s;
+}
+span:focus:after{
     content: "Passion";
     position: absolute;
     left: 0;
@@ -79,14 +83,14 @@ span:hover::after {
     font-size: 15vw;
     text-align: center;
     margin-top: 10px;
-    animation: fadein 2s forwards;
-    transition: 5s ease-in-out;
+    animation: fadein 10s forwards;
+    transition:10s ease-in-out;
 }
-span:focus:after{
-    content: "Passion";
+.span-parent:focus:after{
+    content: "longing";
     position: absolute;
     left: 0;
-    top: -20vw;
+    top: 20vw;
     color: rgb(213, 102, 102);
     opacity: 0.3;
     font-family: "boldoni moda", serif;
