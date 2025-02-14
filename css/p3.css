@@ -41,72 +41,62 @@ a:hover {
     position: relative; 
 }
 
-.parent-keyword {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    overflow: hidden; 
-    margin: none;
-    font-size: 10vw;
-}
-
 .parent-paragraph {
     color: white;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 11;
     display: flex;
     justify-content: start;
     align-items: start;
     margin: none;
-    animation: appear 3s forwards;
+    animation: appear 12s forwards;
+    text-align: center;
 }
 
-.parent-image {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2; 
-    grid-row-end: 11;
-    margin: 0; 
-    padding: 0;
+.parent-paragraph2 {
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
     display: flex;
-    justify-items: start;
+    justify-content: start;
     align-items: start;
-    justify-content: space-between;
-    animation: slide-in 3s forwards;
+    margin: none;
+    animation: appear 2s forwards;
+    z-index: 1000;
+    text-align: center;
 }
 
-.parent-image2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 7; 
-    grid-row-end: 11;
-    margin: 0; 
-    padding: 0; 
+.parent-paragraphvertical {
+    color: wheat;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    font-family: "Bodoni Moda", serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    animation-delay: 2s;
+    animation: slide-in 4s forwards;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: text-shadow 0.3s ease-in-out;
+    letter-spacing: -0.5vw;
+    line-height: 4.2vw;
+    align-items: center;
     display: flex;
-    align-items: start;
-    justify-items: start;
-    justify-content: space-between;
-    animation: slide-in-2 3s forwards;
+    
 }
-
-img {
-    width: 20%;
-    height: 100%;
-}
-
 p {
     margin: 0;
     font-family: "Rajdhani", serif;
     font-size: 2vw;
+    line-height: 100%;
 }
-
 @keyframes appear {
     0% { opacity: 0; }
-    50% { opacity: 0; }
     100% { opacity: 1; }
 }
 
@@ -115,6 +105,7 @@ p {
         transform: translateY(-100%); 
         opacity: 0; 
     }
+
     100% {
         transform: translateY(0); 
         opacity: 1; 
@@ -136,21 +127,11 @@ p {
     }
 }
 
-
-
-h1:hover {
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    transform: scaleY(1.5); 
-    transition: all 0.4s linear;
-}
-
-@keyframes blink-animation {
-    0% { opacity: 1; }
-    25% { opacity: 0.75; }
-    35% { opacity: 0.2; }
-    50% { opacity: 1; }
-    75% { opacity: 0.4; }
-    85% { opacity: 1; }
-    100% { opacity: 1; }
+@keyframes letter-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

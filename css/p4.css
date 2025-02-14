@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 10px;
+    overflow: hidden;
+    background-color: black;
+    perspective: 1000px;
+}
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    margin-top: 3px;
+    font-family: "Rajdhani", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s linear;
+}
+
+a:hover {
+    color: rgb(255, 115, 0);
+    transform: scale(1.1);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    margin: none;
+    height: 100vh;
+    position: relative;
+}
+
+.parent-paragraph {
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 11;
+    justify-content: start;
+    align-items: start;
+    margin: none;
+    text-align: justify;
+    transition: transform 0.5s ease-in-out;
+}
+
+p {
+    margin: 0;
+    font-family: "Rajdhani", serif;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+span {
+    font-family: bodoni moda, serif;
+    color: rgb(213, 102, 102);
+    position: relative;
+}
+
+span:hover::after {
+    content: "Passion";
+    position: absolute;
+    left: 0;
+    top: -20vw;
+    color: rgb(213, 102, 102);
+    opacity: 0.3;
+    font-family: "boldoni moda", serif;
+    font-size: 15vw;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadein 2s forwards;
+    transition: 5s ease-in-out;
+}
+span:focus:after{
+    content: "Passion";
+    position: absolute;
+    left: 0;
+    top: -20vw;
+    color: rgb(213, 102, 102);
+    opacity: 0.3;
+    font-family: "boldoni moda", serif;
+    font-size: 15vw;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadein 10s forwards;
+    transition:10s ease-in-out;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
