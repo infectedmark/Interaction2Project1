@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Rajdhani", serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .receipt {
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .receipt-header,
+  .receipt-footer {
+    text-align: center;
+  }
+  .receipt-header h1 {
+    font-family: "Bodoni Moda", serif;
+    margin: 0;
+    font-size: 32px;
+  }
+  .receipt-header p,
+  .receipt-footer p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .receipt-details {
+    margin: 15px 0;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px dashed #aaa;
+    border-bottom: 1px dashed #aaa;
+    padding: 10px 0;
+  }
+  .receipt-items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  .receipt-items th,
+  .receipt-items td {
+    padding: 5px 0;
+    padding-right: 10%;
+    font-size: 20px;
+    text-align: left;
+  }
+  .receipt-items th {
+    border-bottom: 1px solid #aaa;
+  }
+  .receipt-totals {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .receipt-totals p {
+    margin: 4px 0;
+  }
+  .receipt-totals h2 {
+    margin: 10px 0 0;
+    font-size: 20px;
+  }

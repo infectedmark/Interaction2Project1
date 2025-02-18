@@ -75,7 +75,7 @@ span:hover{
 span:focus:after{
     content: "Passion";
     position: absolute;
-    left: 0;
+    left: -20vw;
     top: -20vw;
     color: rgb(213, 102, 102);
     opacity: 0.3;
@@ -89,8 +89,8 @@ span:focus:after{
 .span-parent:focus:after{
     content: "longing";
     position: absolute;
-    left: 0;
-    top: 20vw;
+    left: -20vw;
+    top: 10vw;
     color: rgb(213, 102, 102);
     opacity: 0.3;
     font-family: "boldoni moda", serif;
