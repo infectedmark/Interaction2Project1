@@ -8,16 +8,17 @@ body {
     perspective: 1000px;
 }
 
-nav {
+nav{
     color: white;
-    display: flex;
-    justify-content: right;
-    margin-right: 10px;
-    margin-top: 3px;
-    font-family: "Rajdhani", serif;
+    display:flex;
+    justify-content: space-between;
+    margin-right:10px;
+    margin-top:3px;
+    margin-left: 10px;
+    font-family: "bodoni moda",serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 24px;
+    font-size:24px;
 }
 
 a {
@@ -52,7 +53,7 @@ a:hover {
     align-items: start;
     margin: none;
     text-align: justify;
-    transition: transform 0.5s ease-in-out;
+    animation: fadein 4s forwards linear;
 }
 
 p {
@@ -60,6 +61,8 @@ p {
     font-family: "Rajdhani", serif;
     font-size: 2vw;
     line-height: 1.5;
+    cursor: default;
+    
 }
 
 span {
@@ -69,8 +72,9 @@ span {
 }
 
 span:hover{
-    color: royalblue;
+    color: rgb(255, 255, 255);
     transition: ease-in-out 0.5s;
+    cursor: none;
 }
 span:focus:after{
     content: "Passion";
@@ -83,7 +87,7 @@ span:focus:after{
     font-size: 15vw;
     text-align: center;
     margin-top: 10px;
-    animation: fadein 10s forwards;
+    animation: fadein 6s forwards;
     transition:10s ease-in-out;
 }
 .span-parent:focus:after{
@@ -97,13 +101,41 @@ span:focus:after{
     font-size: 15vw;
     text-align: center;
     margin-top: 10px;
-    animation: fadein 10s forwards;
+    animation: fadein 4s forwards;
     transition:10s ease-in-out;
 }
 
 @keyframes fadein {
     0% { opacity: 0; }
-    50% { opacity: 1; }
     100% { opacity: 1; }
 }
-
+@media (max-width: 600px){
+    .parent-paragraph {
+        font-size: 16px;
+        line-height:17px;
+        color: white;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 10;
+        justify-content: start;
+        align-items: start;
+        margin: none;
+        text-align: justify;
+        animation: fadein 4s forwards linear;
+    }
+    .span-parent:focus:after{
+        content: "longing";
+        position: absolute;
+        left:-130px;
+        top: 380px;
+        color: rgb(213, 102, 102);
+        opacity: 0.3;
+        font-family: "boldoni moda", serif;
+        font-size: 15vw;
+        text-align: center;
+        margin-top: 10px;
+        animation: fadein 10s forwards;
+        transition:10s ease-in-out;
+    }
+}

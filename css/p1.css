@@ -5,15 +5,22 @@ body{
     margin:10px;
     overflow:hidden;
     background-color: black;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 nav{
     color: white;
     display:flex;
-    justify-content: right;
+    justify-content: space-between;
     margin-right:10px;
     margin-top:3px;
-    font-family: "Rajdhani", serif;
+    margin-left: 10px;
+    font-family: "bodoni moda",serif;
     font-weight: 300;
     font-style: normal;
     font-size:24px;
@@ -48,6 +55,10 @@ a:hover{
     align-items: center; 
     margin:none;
     font-size:10vw;
+}
+
+.parent-keyword a{
+    text-decoration:none;
 }
 
 .parent-paragraph1 {
@@ -130,8 +141,59 @@ h1 span {
     }
 }
 
-h1:hover {
-    color:rgb(255, 255, 255);
-    font-weight:900;
-    transition:all 0.4s ease-in-out;
+@media (max-width: 600px) {/* mobileview */
+    h1{
+        font-size: 60px;
+        transform: translateY(10px);
+    }
+    .figmagrid-title {
+        
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        grid-row-end: 10;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        margin:none;
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        margin-right:10px;
+        margin-top:3px;
+        font-family: "bodoni moda" "serif";
+        font-weight: 300;
+        font-style: normal;
+        font-size:24px;
+    }
+    .parent-paragraph1 {
+        color: white;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin:none;
+        animation: appear 6s forwards;
+        font-size: 16px;
+        text-align: center;
+    }
+    .parent-paragraph2 {
+        color: white;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin:none;
+        animation: appear 6s forwards;
+        font-size: 16px;
+        text-align: center;
+        
+    }
 }

@@ -1,33 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+
 
 body {
-    background-color: #f2f2f2;
+    background-color: #000000;
     font-family: "Rajdhani", serif;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
+    animation: fadein 2s;
   }
   .receipt {
     width: 600px;
-    background: #fff;
+    background: #000000;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
   .receipt-header,
   .receipt-footer {
     text-align: center;
+    color: white;
   }
   .receipt-header h1 {
+    color: white;
     font-family: "Bodoni Moda", serif;
     margin: 0;
     font-size: 32px;
   }
   .receipt-header p,
   .receipt-footer p {
+    color: white;
     margin: 5px 0;
     font-size: 16px;
+  }
+
+  .receipt-footer a{
+    transition: all 0.3s ease;
+    color: white;
+    
+  }
+
+  .receipt-footer a:hover{
+    font-size: 20px;
+    justify-items: center;
+    color: white;
   }
   .receipt-details {
     margin: 15px 0;
@@ -36,11 +59,13 @@ body {
     border-top: 1px dashed #aaa;
     border-bottom: 1px dashed #aaa;
     padding: 10px 0;
+    color: white;
   }
   .receipt-items {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 15px;
+    color: white;
   }
   .receipt-items th,
   .receipt-items td {
@@ -48,6 +73,7 @@ body {
     padding-right: 10%;
     font-size: 20px;
     text-align: left;
+    color: white;
   }
   .receipt-items th {
     border-bottom: 1px solid #aaa;
@@ -56,11 +82,31 @@ body {
     text-align: right;
     font-size: 16px;
     margin-top: 10px;
+    color: white;
   }
   .receipt-totals p {
     margin: 4px 0;
+    color: white;
   }
   .receipt-totals h2 {
     margin: 10px 0 0;
     font-size: 20px;
+    color: white;
   }
+
+  @media (max-width: 600px){
+    .receipt-items th, .receipt-items td {
+        font-size: 12px;
+    }
+
+    .receipt-header h1{
+        font-size: 20px;
+    }  
+    .receipt-header p, .receipt-footer p{
+        font-size: 12px;
+    } 
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
