@@ -7,16 +7,7 @@ body{
     animation: fadein 2s;
 }
 
-nav{
-    display:flex;
-    justify-content: right;
-    margin-right:10px;
-    margin-top:3px;
-    font-family: "Rajdhani", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size:24px;
-}
+
 
 a{
     text-decoration:none;
